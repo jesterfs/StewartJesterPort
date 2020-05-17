@@ -1,0 +1,292 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap');
+
+/* ------------------------------------------------------ */
+/* CSS THAT EFFECTS WHOLE PAGE */
+/* ------------------------------------------------------ */
+
+/* setting up fonts for the whole page */
+h1, h2, h3 {
+  font-family:  'Courgette', cursive;
+}
+p, h4, h5, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* styling the links */
+a {
+  text-decoration: none;
+}
+a:link {color:white;}
+a:visited {color:white;}
+a:hover {color:gray;}
+a:active {color:black;}
+
+/* seperate styling for footer/header links and main bodylinks */
+a.bodylinks {text-decoration: underline;}
+a.bodylinks:link {color: black;}
+a.bodylinks:visited {color:gray;}
+a.bodylinks:hover {color:red;}
+a.bodylinks:active {color:black;}
+/* styles for page breaks
+*/
+hr {
+margin-top: 50px;
+/* makes it so only a single side of the border has a style, so it's one line */
+border-style: dotted none none none;
+border-color: black;
+height: 0px;
+border-width: 5px;
+/* makes it a small line of dots instead of a full width */
+width: 10%;
+}
+
+/* styling for the headings on each section */
+.sectionheader {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* styling for the list items i use throughout */
+li {
+  font-size: 20px !important;
+}
+/* ------------------------------------------------------ */
+/* SECTION SPECIFIC STYLING */
+/* ------------------------------------------------------ */
+
+
+/* style for header/nav */
+/* setting header background to black and fixing it so it scrolls with the user */
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+/* container for logo and navbar. overflow keeps content in the section and clear keeps things from being
+to close together */
+.container{
+  clear:both;
+  overflow:auto;
+}
+
+/* floats navbar to the right and sets up a little padding */
+nav{
+  float:right;
+  padding-right: 2%;
+}
+
+/* same but on the oppostie side */
+.logo{float:left;
+  color: white;
+  padding-left: 2%;
+}
+
+/* makes it so navbar links don't take up the whole line so they van be horizontal */
+ul li{
+  display: inline-block;
+  padding:10px;
+  font-size:20px;
+}
+
+
+
+/* style for home/intro */
+/* ------- */
+
+.home{
+  text-align: center;
+
+
+}
+/* rounds the image and does inline-block again */
+.profile {
+  border-radius: 50%;
+  width: 25%;
+  margin-top: 120px;
+  display: inline-block;
+}
+
+/* puts intro on same line */
+.intro {
+  float: right;
+  margin-right: 15%;
+  width: 40%;
+  padding-top: 110px;
+}
+
+.introtitle {
+  font-size: 45px;
+}
+
+.introtext {
+  font-size: 25px;
+}
+
+/* styling for portfolio and services */
+/* ------------ */
+/* puts boxes in the center */
+.boxsection {
+  text-align: center;
+}
+/* makes the boxes all take up the same width, used percentages so it is slightly responsive */
+.samplebox {
+  width: 25%;
+  border-style: solid;
+  border-color: black;
+  text-align: left;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display:inline-block;
+}
+.sampletitle {
+  text-align: center;
+}
+
+/* does the same thing as box section about */
+.webdevsamples {
+  text-align: center;
+  /* margin-top: 50px;
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+/* makes the webdev samples match the service and portfolio boxes, but without the border */
+.placeholder {
+  width: 25%;
+  border-style: solid;
+  border-color: white;
+  text-align: left;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display:inline-block;
+}
+
+/* makes image take up full box */
+.sampleimage {
+  width: 100%;
+
+}
+
+.sampletext {
+  margin-left: 10%;
+}
+
+/* styling for about me */
+/* -------- */
+.about {
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.abouttext {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* contact page */
+
+.contact {
+  margin-bottom: 50px;
+}
+
+/* makes the form only take up half the page, and margins on auto center it */
+.contactform {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #D3D3D3;
+  margin-top: 50px;
+}
+
+/* makes it so each label/field combo take up the full line */
+.entries {
+  width: 100%;
+}
+
+.inputs {
+  margin-top: 30px;
+}
+
+.inputlabel {
+  margin-left: 60px;
+}
+
+/* makes the fields longer */
+.inputfield {
+  margin-left: 50px;
+  width: 60%;
+  /* margin-right: auto; */
+}
+
+.contactmethod {
+  margin-left: 95px;
+}
+
+.message {
+  height: 200px;
+  margin-left: 35px;
+}
+
+.submitbutton {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+/* footer */
+/* ------- */
+
+/* line height just spaces things out */
+footer {
+  background-color: black;
+  color: white;
+  line-height: 4px;
+
+}
+
+/* next few sets of rules were to make the two menus stay on the opposite side of eachother */
+.footersections {
+  text-align: center;
+  overflow: hidden;
+  width: 90%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.footerbox {
+  margin-top: 10px;
+}
+
+.socialbox {
+  float: right;
+  margin-right: 25%;
+}
+
+.navbox {
+  float: left;
+}
+
+/* wanted these underline as headings and had to change them to Montserrat */
+.footertitle {
+  text-decoration: underline;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footerlist {
+  font-size: 15px;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 10px;
+}
